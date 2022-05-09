@@ -1806,7 +1806,7 @@ const createServiceHash = (web3)=>(serviceId, account)=>{
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "U": () => (/* binding */ loadContract)
 /* harmony export */ });
-const NETWORK_ID = "5777";
+const NETWORK_ID = "3";
 const loadContract = async (name, web3)=>{
     const res = await fetch(`/contracts/${name}.json`);
     const Artifact = await res.json();

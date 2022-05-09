@@ -5,9 +5,9 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/mhyUVbpyB9EH5yusqPVSN/_buildManifest.js",
-    "static/mhyUVbpyB9EH5yusqPVSN/_ssgManifest.js",
-    "static/mhyUVbpyB9EH5yusqPVSN/_middlewareManifest.js"
+    "static/Rg9y3Na0XpHBiN5ZBaEik/_buildManifest.js",
+    "static/Rg9y3Na0XpHBiN5ZBaEik/_ssgManifest.js",
+    "static/Rg9y3Na0XpHBiN5ZBaEik/_middlewareManifest.js"
   ],
   "pages": {
     "/": [
@@ -17,7 +17,7 @@
       "static/chunks/061e6b60-28bd444bb64e34ae.js",
       "static/chunks/fec483df-7b77906a52cde6f0.js",
       "static/chunks/217-ae3f6e457dbaf125.js",
-      "static/chunks/877-f1f8790ee2ee6faa.js",
+      "static/chunks/877-5d08ebe6bb556b96.js",
       "static/chunks/pages/index-720e22a1637b8586.js"
     ],
     "/_app": [
@@ -40,7 +40,7 @@
       "static/chunks/061e6b60-28bd444bb64e34ae.js",
       "static/chunks/fec483df-7b77906a52cde6f0.js",
       "static/chunks/217-ae3f6e457dbaf125.js",
-      "static/chunks/877-f1f8790ee2ee6faa.js",
+      "static/chunks/877-5d08ebe6bb556b96.js",
       "static/chunks/pages/marketplace-04d6d349c8b16363.js"
     ],
     "/marketplace/services/managed": [
@@ -50,7 +50,7 @@
       "static/chunks/061e6b60-28bd444bb64e34ae.js",
       "static/chunks/fec483df-7b77906a52cde6f0.js",
       "static/chunks/217-ae3f6e457dbaf125.js",
-      "static/chunks/877-f1f8790ee2ee6faa.js",
+      "static/chunks/877-5d08ebe6bb556b96.js",
       "static/chunks/pages/marketplace/services/managed-2fb130dbff39bcf4.js"
     ],
     "/marketplace/services/owned": [
@@ -60,7 +60,7 @@
       "static/chunks/061e6b60-28bd444bb64e34ae.js",
       "static/chunks/fec483df-7b77906a52cde6f0.js",
       "static/chunks/217-ae3f6e457dbaf125.js",
-      "static/chunks/877-f1f8790ee2ee6faa.js",
+      "static/chunks/877-5d08ebe6bb556b96.js",
       "static/chunks/pages/marketplace/services/owned-4e18165f50e538f4.js"
     ],
     "/services/[slug]": [
@@ -70,7 +70,7 @@
       "static/chunks/061e6b60-28bd444bb64e34ae.js",
       "static/chunks/fec483df-7b77906a52cde6f0.js",
       "static/chunks/217-ae3f6e457dbaf125.js",
-      "static/chunks/877-f1f8790ee2ee6faa.js",
+      "static/chunks/877-5d08ebe6bb556b96.js",
       "static/chunks/pages/services/[slug]-3f0061af18237013.js"
     ]
   },
