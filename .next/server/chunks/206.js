@@ -1067,6 +1067,51 @@ __webpack_async_result__();
 
 /***/ }),
 
+/***/ 3767:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ ManagedServiceCard)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+const Item = ({ title , value , className  })=>{
+    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: `${className} px-4 py-3  sm:px-6`,
+        children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "text-sm font-medium text-gray-500",
+                children: title
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2",
+                children: value
+            })
+        ]
+    }));
+};
+function ManagedServiceCard({ children , service , isSearched =false  }) {
+    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: `${isSearched ? "border-indigo-600" : "bg-gray-200"} bg-white border shadow overflow-hidden sm:rounded-lg mb-3`,
+        children: [
+            Object.keys(service).map((key, i)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Item, {
+                    className: `${i % 2 ? "bg-gray-50" : "bg-white"}`,
+                    title: key[0].toUpperCase() + key.slice(1),
+                    value: service[key]
+                }, key)
+            ),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "bg-white px-4 py-5 sm:px-6",
+                children: children
+            })
+        ]
+    }));
+};
+
+
+/***/ }),
+
 /***/ 1654:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1280,51 +1325,6 @@ function Card({ service , disabled , Footer , state  }) {
                 ]
             })
         })
-    }));
-};
-
-
-/***/ }),
-
-/***/ 591:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (/* binding */ ManagedServiceCard)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-
-const Item = ({ title , value , className  })=>{
-    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: `${className} px-4 py-3  sm:px-6`,
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "text-sm font-medium text-gray-500",
-                children: title
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2",
-                children: value
-            })
-        ]
-    }));
-};
-function ManagedServiceCard({ children , service , isSearched =false  }) {
-    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: `${isSearched ? "border-indigo-600" : "bg-gray-200"} bg-white border shadow overflow-hidden sm:rounded-lg mb-3`,
-        children: [
-            Object.keys(service).map((key, i)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Item, {
-                    className: `${i % 2 ? "bg-gray-50" : "bg-white"}`,
-                    title: key[0].toUpperCase() + key.slice(1),
-                    value: service[key]
-                }, key)
-            ),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "bg-white px-4 py-5 sm:px-6",
-                children: children
-            })
-        ]
     }));
 };
 
@@ -1661,7 +1661,7 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony export */   "$4": () => (/* reexport safe */ _list__WEBPACK_IMPORTED_MODULE_0__.Z),
 /* harmony export */   "WF": () => (/* reexport safe */ _card__WEBPACK_IMPORTED_MODULE_1__.Z),
 /* harmony export */   "ZZ": () => (/* reexport safe */ _card_Owned__WEBPACK_IMPORTED_MODULE_2__.Z),
-/* harmony export */   "F6": () => (/* reexport safe */ _card_managed__WEBPACK_IMPORTED_MODULE_3__.Z),
+/* harmony export */   "F6": () => (/* reexport safe */ _card_Managed__WEBPACK_IMPORTED_MODULE_3__.Z),
 /* harmony export */   "NX": () => (/* reexport safe */ _curriculum__WEBPACK_IMPORTED_MODULE_4__.Z),
 /* harmony export */   "s6": () => (/* reexport safe */ _hero__WEBPACK_IMPORTED_MODULE_5__.Z),
 /* harmony export */   "Zb": () => (/* reexport safe */ _keypoints__WEBPACK_IMPORTED_MODULE_6__.Z),
@@ -1670,7 +1670,7 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony import */ var _list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8948);
 /* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4250);
 /* harmony import */ var _card_Owned__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1654);
-/* harmony import */ var _card_managed__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(591);
+/* harmony import */ var _card_Managed__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3767);
 /* harmony import */ var _curriculum__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6009);
 /* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9485);
 /* harmony import */ var _keypoints__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5253);
