@@ -83,11 +83,6 @@ function Service({ service  }) {
                     })
                 ]
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ui_service__WEBPACK_IMPORTED_MODULE_2__/* .Curriculum */ .NX, {
-                isLoading: isLoading,
-                locked: isLocked,
-                serviceState: serviceState
-            }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ui_common__WEBPACK_IMPORTED_MODULE_1__/* .Modal */ .u_, {})
         ]
     }));

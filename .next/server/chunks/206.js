@@ -177,7 +177,8 @@ swr__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await
 
 const adminAdresses = {
     "0x42d5fd8310560fcb542a9e6b908a8913f8ff9ee5c67692f3ce10cbbe145f12ef": true,
-    "0x764aa91985e96420344dbcd2be0f8c837b12632f86bfbba02e227863d5c07253": true
+    "0x764aa91985e96420344dbcd2be0f8c837b12632f86bfbba02e227863d5c07253": true,
+    "0x41e23aaf3bb4bb808278026c229bc4e1fc290e87e0b7e9eba31361cb778b0516": true
 };
 const handler = (web3, provider)=>{
     return ()=>{
@@ -278,7 +279,7 @@ const NETWORKS = {
     56: "Binance Smart Chain",
     1337: "Ganache"
 };
-const targetNetwork = NETWORKS["3"];
+const targetNetwork = NETWORKS["5"];
 const handler = (web3)=>()=>{
         const { data , ...rest } = (0,swr__WEBPACK_IMPORTED_MODULE_1__["default"])(()=>web3 ? "web3/network" : null
         , async ()=>{
@@ -604,13 +605,8 @@ function Footer() {
                 className: "mt-5 flex flex-col items-center",
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                     className: "py-6",
-                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
-                        className: "mb-6 text-white text-sm text-primary-2 font-bold",
-                        children: [
-                            "\xa9 ",
-                            new Date().getFullYear(),
-                            " Eincode"
-                        ]
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                        className: "mb-6 text-white text-sm text-primary-2 font-bold"
                     })
                 })
             })
@@ -636,11 +632,11 @@ function Hero() {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: "text-6xl font-semibold text-gray-900 leading-none",
-                children: "Grow your career as a developer"
+                children: "Pay for tons of Services with Cryptocurrency"
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: "mt-6 text-xl font-light text-true-gray-500 antialiased",
-                children: "Learn programming and web development the easy way! Get unlimited access to all of our courses."
+                children: "A simpler and faster way to make transactions with service providers."
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: "mt-5 sm:mt-8 flex lg:justify-start",
@@ -649,7 +645,7 @@ function Hero() {
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                         href: "#",
                         className: "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10",
-                        children: "Get started"
+                        children: "See Services"
                     })
                 })
             })
@@ -950,46 +946,30 @@ function Navbar() {
                                             className: "font-medium mr-8 text-gray-500 hover:text-gray-900",
                                             children: "Marketplace"
                                         })
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ui_common__WEBPACK_IMPORTED_MODULE_2__/* .ActiveLink */ .O$, {
-                                        href: "/blogs",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            className: "font-medium mr-8 text-gray-500 hover:text-gray-900",
-                                            children: "Blogs"
-                                        })
                                     })
                                 ]
                             }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "text-center",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ui_common__WEBPACK_IMPORTED_MODULE_2__/* .ActiveLink */ .O$, {
-                                        href: "/wishlist",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            className: "font-medium sm:mr-8 mr-1 text-gray-500 hover:text-gray-900",
-                                            children: "Wishlist"
-                                        })
-                                    }),
-                                    isLoading ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ui_common__WEBPACK_IMPORTED_MODULE_2__/* .Button */ .zx, {
-                                        disabled: true,
-                                        onClick: connect,
-                                        children: "Loading..."
-                                    }) : account.data ? /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components_ui_common__WEBPACK_IMPORTED_MODULE_2__/* .Button */ .zx, {
-                                        hoverable: false,
-                                        className: "cursor-default",
-                                        children: [
-                                            "Hi there ",
-                                            account.isAdmin && "EL ADMIN"
-                                        ]
-                                    }) : requireInstall ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ui_common__WEBPACK_IMPORTED_MODULE_2__/* .Button */ .zx, {
-                                        onClick: ()=>window.open("https://metamask.io/download.html", "_blank")
-                                        ,
-                                        children: "Install Metamask"
-                                    }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ui_common__WEBPACK_IMPORTED_MODULE_2__/* .Button */ .zx, {
-                                        onClick: connect,
-                                        children: "Connect"
-                                    })
-                                ]
+                                children: isLoading ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ui_common__WEBPACK_IMPORTED_MODULE_2__/* .Button */ .zx, {
+                                    disabled: true,
+                                    onClick: connect,
+                                    children: "Loading..."
+                                }) : account.data ? /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components_ui_common__WEBPACK_IMPORTED_MODULE_2__/* .Button */ .zx, {
+                                    hoverable: false,
+                                    className: "cursor-default",
+                                    children: [
+                                        "Hi there ",
+                                        account.isAdmin && "EL ADMIN"
+                                    ]
+                                }) : requireInstall ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ui_common__WEBPACK_IMPORTED_MODULE_2__/* .Button */ .zx, {
+                                    onClick: ()=>window.open("https://metamask.io/download.html", "_blank")
+                                    ,
+                                    children: "Install Metamask"
+                                }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ui_common__WEBPACK_IMPORTED_MODULE_2__/* .Button */ .zx, {
+                                    onClick: connect,
+                                    children: "Connect"
+                                })
                             })
                         ]
                     })
@@ -1335,9 +1315,7 @@ function Card({ service , disabled , Footer , state  }) {
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (/* binding */ Curriculum)
-/* harmony export */ });
+/* unused harmony export default */
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_ui_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4844);
@@ -1347,47 +1325,47 @@ _components_ui_common__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependenci
 
 
 
-const lectures = [
+const lectures = (/* unused pure expression or super */ null && ([
     "How to init App",
     "How to get a help",
     "Introduction to Solidity",
     "Programing in C++",
     "How to write For Loops",
     "Safe operator", 
-];
+]));
 function Curriculum({ locked , serviceState , isLoading  }) {
     const statusClass = "px-2 inline-flex text-xs leading-5 font-semibold rounded-full";
-    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+    return(/*#__PURE__*/ _jsx("section", {
         className: "max-w-5xl mx-auto",
-        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+        children: /*#__PURE__*/ _jsx("div", {
             className: "flex flex-col",
-            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            children: /*#__PURE__*/ _jsx("div", {
                 className: "-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8",
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                children: /*#__PURE__*/ _jsx("div", {
                     className: "py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8",
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    children: /*#__PURE__*/ _jsx("div", {
                         className: "shadow overflow-hidden border-b border-gray-200 sm:rounded-lg",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("table", {
+                        children: /*#__PURE__*/ _jsxs("table", {
                             className: "min-w-full divide-y divide-gray-200",
                             children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("thead", {
+                                /*#__PURE__*/ _jsx("thead", {
                                     className: "bg-gray-50",
-                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                    children: /*#__PURE__*/ _jsxs("tr", {
                                         children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("th", {
+                                            /*#__PURE__*/ _jsx("th", {
                                                 scope: "col",
                                                 className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider",
                                                 children: "Section 1"
                                             }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("th", {
+                                            /*#__PURE__*/ _jsx("th", {
                                                 scope: "col",
                                                 className: "px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider",
                                                 children: "Status"
                                             }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("th", {
+                                            /*#__PURE__*/ _jsx("th", {
                                                 scope: "col",
                                                 className: "relative px-6 py-3",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                children: /*#__PURE__*/ _jsx("span", {
                                                     className: "sr-only",
                                                     children: "Edit"
                                                 })
@@ -1395,52 +1373,52 @@ function Curriculum({ locked , serviceState , isLoading  }) {
                                         ]
                                     })
                                 }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("tbody", {
+                                /*#__PURE__*/ _jsx("tbody", {
                                     className: "bg-white divide-y divide-gray-200",
-                                    children: lectures.map((lec)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("tr", {
+                                    children: lectures.map((lec)=>/*#__PURE__*/ _jsxs("tr", {
                                             children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                /*#__PURE__*/ _jsx("td", {
                                                     className: "px-6 py-4 whitespace-nowrap",
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                    children: /*#__PURE__*/ _jsx("div", {
                                                         className: "flex items-center",
-                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                        children: /*#__PURE__*/ _jsx("div", {
                                                             className: "ml-4",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                                            children: /*#__PURE__*/ _jsx("div", {
                                                                 className: "text-sm font-medium text-gray-900",
                                                                 children: lec
                                                             })
                                                         })
                                                     })
                                                 }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                /*#__PURE__*/ _jsx("td", {
                                                     className: "px-6 py-4 whitespace-nowrap",
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                    children: /*#__PURE__*/ _jsx("span", {
                                                         className: locked ? `bg-red-100 text-red-800 ${statusClass}` : `bg-green-100 text-green-800 ${statusClass}`,
                                                         children: locked ? "Locked" : "Unlocked"
                                                     })
                                                 }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("td", {
+                                                /*#__PURE__*/ _jsx("td", {
                                                     className: "px-6 py-4 whitespace-nowrap text-right text-sm font-medium",
-                                                    children: isLoading ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ui_common__WEBPACK_IMPORTED_MODULE_1__/* .Loader */ .aN, {}) : locked ? /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                                                    children: isLoading ? /*#__PURE__*/ _jsx(Loader, {}) : locked ? /*#__PURE__*/ _jsxs(_Fragment, {
                                                         children: [
-                                                            serviceState === "deactivated" && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                                                            serviceState === "deactivated" && /*#__PURE__*/ _jsx(Link, {
                                                                 href: "/marketplace",
-                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                children: /*#__PURE__*/ _jsx("a", {
                                                                     className: "text-indigo-600 hover:text-indigo-900",
                                                                     children: "Get Access"
                                                                 })
                                                             }),
-                                                            serviceState === "purchased" && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                                                            serviceState === "purchased" && /*#__PURE__*/ _jsx(Link, {
                                                                 href: "/faq",
-                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                children: /*#__PURE__*/ _jsx("a", {
                                                                     className: "text-yellow-500 hover:text-yellow-900",
                                                                     children: "Waiting for activation"
                                                                 })
                                                             })
                                                         ]
-                                                    }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                                                    }) : /*#__PURE__*/ _jsx(Link, {
                                                         href: "/access",
-                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        children: /*#__PURE__*/ _jsx("a", {
                                                             className: "text-indigo-600 hover:text-indigo-900",
                                                             children: "Access"
                                                         })
@@ -1558,6 +1536,8 @@ __webpack_async_result__();
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5675);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1664);
+
 
 
 function ServiceHero({ title , description , image , hasOwner  }) {
@@ -1614,18 +1594,20 @@ function ServiceHero({ title , description , image , hasOwner  }) {
                                             children: [
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                     className: "rounded-md shadow",
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                        href: "#",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                                                        href: "/marketplace",
                                                         className: "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10",
-                                                        children: "Get started"
+                                                        children: "Purchase Course"
                                                     })
                                                 }),
                                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                     className: "mt-3 sm:mt-0 sm:ml-3",
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                        href: "#",
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                                                        href: "mailto: alonsosolisgerloni@gmail.com",
+                                                        target: "_blank",
+                                                        rel: "noreferrer",
                                                         className: "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10",
-                                                        children: "Watch"
+                                                        children: "Contact Provider"
                                                     })
                                                 })
                                             ]
@@ -1662,7 +1644,6 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __we
 /* harmony export */   "WF": () => (/* reexport safe */ _card__WEBPACK_IMPORTED_MODULE_1__.Z),
 /* harmony export */   "ZZ": () => (/* reexport safe */ _card_Owned__WEBPACK_IMPORTED_MODULE_2__.Z),
 /* harmony export */   "F6": () => (/* reexport safe */ _card_Managed__WEBPACK_IMPORTED_MODULE_3__.Z),
-/* harmony export */   "NX": () => (/* reexport safe */ _curriculum__WEBPACK_IMPORTED_MODULE_4__.Z),
 /* harmony export */   "s6": () => (/* reexport safe */ _hero__WEBPACK_IMPORTED_MODULE_5__.Z),
 /* harmony export */   "Zb": () => (/* reexport safe */ _keypoints__WEBPACK_IMPORTED_MODULE_6__.Z),
 /* harmony export */   "qv": () => (/* reexport safe */ _filter__WEBPACK_IMPORTED_MODULE_7__.Z)
@@ -1735,7 +1716,7 @@ function Keypoints({ points  }) {
                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
                                                 className: "ml-16 text-lg leading-6 font-medium text-gray-900",
                                                 children: [
-                                                    "Keypoint ",
+                                                    "Benefit ",
                                                     i + 1
                                                 ]
                                             })
@@ -1806,7 +1787,7 @@ const createServiceHash = (web3)=>(serviceId, account)=>{
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "U": () => (/* binding */ loadContract)
 /* harmony export */ });
-const NETWORK_ID = "3";
+const NETWORK_ID = "5";
 const loadContract = async (name, web3)=>{
     const res = await fetch(`/contracts/${name}.json`);
     const Artifact = await res.json();

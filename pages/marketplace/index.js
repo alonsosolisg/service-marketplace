@@ -143,11 +143,11 @@ export default function Marketplace({services}) {
                       <>
                         <div className="flex">
                           <Button
-                            onClick={() => alert("You are owner of this service")}
+                            onClick={() => alert("You have booked this service")}
                             size="sm"
                             disabled={false}
                             variant="white">
-                            Yours &#10004;
+                            Booked &#10004;
                           </Button>
                           { owned.state === "deactivated" &&
                             <div className="ml-1">

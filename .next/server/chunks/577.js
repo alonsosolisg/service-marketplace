@@ -211,7 +211,7 @@ function EthRates() {
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                         className: "text-lg text-gray-500",
-                        children: "Price per course"
+                        children: "Initial Booking Price"
                     })
                 ]
             })

@@ -50,7 +50,7 @@ const withToast = (promise)=>{
                             children: "Has been successfully processed."
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                            href: `https://ropsten.etherscan.io/tx/${data.transactionHash}`,
+                            href: `https://goerli.etherscan.io/tx/${data.transactionHash}`,
                             target: "_blank",
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
                                 className: "text-indigo-600 underline",

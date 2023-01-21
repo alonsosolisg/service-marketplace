@@ -9,16 +9,16 @@ module.exports = {
      port: 7545,
      network_id: "*",
     },
-    ropsten: {
-      provider: () =>
-        new HDWalletProvider({
-          mnemonic: {
-            phrase: keys.MNEMONIC
-          },
-          providerOrUrl: `https://ropsten.infura.io/v3/${keys.INFURA_PROJECT_ID}`,
-          addressIndex: 0
-        }),
-      network_id: 3,
+    goerli: {
+      provider: () => 
+      new HDWalletProvider({
+        mnemonic: {
+          phrase:  keys.MNEMONIC
+        },
+        providerOrUrl: keys.INFURA_GOERLI_URL,
+        addressIndex: 0
+      }),
+      network_id: '5',
       gas: 5500000, // Gas Limit (How much are we willing to spend)
       gasPrice: 20000000000, // How much will we spend for the unit of gas
       confirmations: 2, // Number of blocks to wait between deployment

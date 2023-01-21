@@ -54,11 +54,6 @@ export default function Service({service}) {
 
         }
         
-        <Curriculum
-        isLoading={isLoading}
-        locked={isLocked}
-        serviceState={serviceState}
-        />
         <Modal/>
       </>
     )

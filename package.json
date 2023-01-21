@@ -20,7 +20,7 @@
     "web3": "^1.7.1"
   },
   "devDependencies": {
-    "@truffle/hdwallet-provider": "^2.0.8",
+    "@truffle/hdwallet-provider": "^2.1.5",
     "autoprefixer": "^10.4.2",
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",

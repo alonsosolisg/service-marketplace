@@ -240,7 +240,7 @@ function OrderModal({ service , onClose , onSubmit , isNewPurchase  }) {
                                             })
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                            children: "I accept Eincode 'terms of service' and I agree that my order can be rejected in the case data provided above are not correct"
+                                            children: "I accept 'terms of service' and I agree that my order can be rejected in the case data provided above are not correct"
                                         })
                                     ]
                                 }),
@@ -444,12 +444,12 @@ function Marketplace({ services  }) {
                                         className: "flex",
                                         children: [
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_ui_common__WEBPACK_IMPORTED_MODULE_5__/* .Button */ .zx, {
-                                                onClick: ()=>alert("You are owner of this service")
+                                                onClick: ()=>alert("You have booked this service")
                                                 ,
                                                 size: "sm",
                                                 disabled: false,
                                                 variant: "white",
-                                                children: "Yours ✔"
+                                                children: "Booked ✔"
                                             }),
                                             owned.state === "deactivated" && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                 className: "ml-1",

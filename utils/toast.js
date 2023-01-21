@@ -29,7 +29,7 @@ export const withToast = (promise) => {
                           Has been successfully processed.
                       </p>
                       <a 
-                        href={`https://ropsten.etherscan.io/tx/${data.transactionHash}`}
+                        href={`https://goerli.etherscan.io/tx/${data.transactionHash}`}
                         target="_blank"
                         >
                             <i className="text-indigo-600 underline">See Tx Details</i>
